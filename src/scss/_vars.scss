@@ -1,0 +1,18 @@
+// $black: #202020;
+
+$sm: 575px;
+$md: 767px;
+$lg: 991px;
+$xl: 1199px;
+
+@mixin max($width) {
+  @media only screen and (max-width: $width) {
+    @content;
+  }
+}
+
+@mixin min($width) {
+  @media only screen and (min-width: $width) {
+    @content;
+  }
+}
